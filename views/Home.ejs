@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>E-Hospital | Home</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+</head>
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+  }
+
+  .bg {
+    background-image: url('/public/images/landing.jpg');
+    background-size: cover;
+    background-position-x:-210px;
+    height: 150vh;
+    background-repeat: no-repeat;
+  }
+
+  .display {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 15%;
+    border: 2px solid white;
+    opacity: 100%;
+    background-color: rgba(255, 255, 255, 0.096);
+  }
+
+  .user {
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 10%;
+    display: inline-block;
+    border-right: 5px solid rgba(0, 0, 0, 0.144);
+  }
+
+  #patient_card:hover {
+    background-color: rgba(0, 121, 107, 0.075);
+    border-top: 6px solid #00796B;
+    border-bottom: 3px solid #00796B;
+  }
+
+  #doctor_card:hover {
+    background-color: rgba(3, 168, 244, 0.089);
+    border-top: 6px solid #03A9F4;
+    border-bottom: 3px solid #03A9F4;
+  }
+
+  #admin_card:hover {
+    background-color: #e7830018;
+    border-top: 6px solid #e78200;
+    border-bottom: 3px solid #e78200;
+  }
+
+  .hvr-overline-from-left:before {
+    background: white;
+    height: 2px;
+  }
+
+  .hvr-bounce-to-right:before {
+    background: #0e0f0f71;
+  }
+</style>
+
+<body>
+  <div class="bg">
+    <div class="row mt-5">
+      <div class="col-md-6 m-auto">
+        <div class="hvr-bounce-to-right display card card-body">
+          <img class="logo hvr-wobble-horizontal" src="/public/images/logo.svg" height="" width=""
+            style="margin-top:0%;margin-left:15%">
+          <br>
+          <br>
+          <h5 class="text-center mb-3" style="color: white;"><i class="fas fa-hospital-symbol"></i> Select Account Type
+          </h5>
+          <hr style="background-color: white;">
+          <div id="patient_card" class="user card hvr-hang" style="width: 10rem;">
+            <img src="/public/images/pat_1.png" class="card-img-top" height="150" width="200">
+            <div class="card-body">
+              <!-- <h5 class="card-title" style="text-align: center">Patient</h5> -->
+              <a href="/patient/welcome" class="btn btn-dark btn-block stretched-link">Patient</a>
+            </div>
+          </div>
+          <div id="doctor_card" class="user card ml-4 hvr-hang" style="width: 10rem;">
+            <img src="/public/images/doc_1.png" class="card-img-top" height="150" width="200">
+            <div class="card-body">
+              <!-- <h5 class="card-title" style="text-align: center">Doctor</h5> -->
+              <a href="/doctor/welcomedr" class="btn btn-dark btn-block stretched-link">Doctor</a>
+            </div>
+          </div>
+          <div id="admin_card" class="user card ml-4 hvr-hang" style="width: 10rem;">
+            <img src="/public/images/admin_1.png" class="card-img-top" height="150" width="200">
+            <div class="card-body">
+              <!-- <h5 class="card-title" style="text-align: center">Admin</h5> -->
+              <a href="/admin/login" class="btn btn-dark btn-block stretched-link">Admin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<title>E-Hospital | Patient Login</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+  }
+
+  .bg {
+    background-image: url("/public/images/landing.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
+
+  .display {
+    color: #fff;
+    margin-top: 10%;
+    margin-left: 0%;
+    border: 2px solid white;
+    opacity: 100%;
+    background-color: rgba(255, 255, 255, 0.096);
+  }
+
+  .hvr-overline-from-center:before {
+    background: white;
+  }
+
+  .hvr-bounce-to-right:before {
+    background: #0e0f0f71;
+  }
+</style>
+
+<body>
+  <div class="bg">
+    <div class="row mt-5">
+      <div class="col-md-3 m-auto">
+        <div
+          class="display card card-body hvr-bounce-to-right hvr-icon-pulse-grow"
+        >
+          <img
+            class="logo hvr-wobble-horizontal"
+            src="/public/images/logo.svg"
+            height=""
+            width=""
+            style="margin-top: 0%; margin-left: 0%"
+          />
+          <br />
+          <h4 class="text-center mb-3" style="color: white">
+            <i class="fas fa-sign-in-alt hvr-icon"></i> Patient Login
+          </h4>
+          <hr style="background: white" />
+          <%- include('./partials/messages.ejs'); %>
+          <form action="/patient/login" method="POST">
+            <div class="form-group">
+              <label for="email" class="lead">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control hvr-skew-forward"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password" class="lead">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control hvr-skew-forward"
+                placeholder="Enter Password"
+              />
+            </div>
+            <button type="submit" class="btn btn-success btn-block">
+              Login
+            </button>
+          </form>
+          <p class="lead mt-4">
+            No Account?
+            <a style="color: rgb(169, 238, 10)" href="/patient/register"
+              ><b style="font-size: 20px">Register</b></a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

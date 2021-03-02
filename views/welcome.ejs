@@ -1,0 +1,97 @@
+<title>E-Hospital | Patient Welcome</title>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>E-Hospital | Home</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+</head>
+<style>
+  body {
+    margin: 0;
+    height: 100%;
+  }
+
+  .bg {
+    background-image: url('/public/images/landing.jpg');
+    background-size: cover;
+    height: 120vh;
+    background-repeat: no-repeat;
+  }
+
+  .display {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 20%;
+    border: 2px solid white;
+    opacity: 100%;
+    background-color: rgba(255, 255, 255, 0.096);
+  }
+
+  .reg_log {
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 10%;
+    display: inline-block;
+    border-right: 5px solid rgba(0, 0, 0, 0.144);
+  }
+
+  .hvr-overline-from-center:before {
+    background: white;
+  }
+
+  .hvr-bounce-to-left:before {
+    background: #0e0f0f71;
+  }
+</style>
+
+<body>
+  <div class="bg">
+    <div class="row mt-5">
+      <div class="col-md-6 m-auto">
+        <div class="display card card-body hvr-bounce-to-left">
+          <img class="logo hvr-wobble-horizontal" src="/public/images/logo.svg" height="" width=""
+            style="margin-top:0%;margin-left:0%">
+          <br>
+          <br>
+          <h5 class="text-center mb-3" style="color: white;"><i class="fas fa-hospital-symbol"></i> Create an account or
+            login
+          </h5>
+          <hr style="background-color: white;">
+          <div id="reg_card" class="reg_log card ml-4 hvr-hang" style="width: 10rem;">
+            <div class="card-body">
+              <a href="/patient/register" class="btn btn-dark btn-block stretched-link">Register</a>
+            </div>
+          </div>
+          <div id="log_card" class="reg_log card ml-4 hvr-hang" style="width: 10rem;">
+            <div class="card-body">
+              <a href="/patient/login" class="btn btn-dark btn-block stretched-link">Login</a>
+            </div>
+          </div>
+          <hr style="background-color: white;">
+          <div style="margin-top: 20px;margin-left: 3%" class="hvr-icon-wobble-horizontal">
+            <div style="display: inline-block;position:relative;background: transparent" class="">
+              <i style="color: rgb(245, 247, 246)" class="fas fa-procedures fa-3x hvr-icon"></i>
+            </div>
+            <div style="display: inline-block;position:relative;background: transparent" class="ml-5">
+              <i style="color: rgb(250, 249, 249)" class="fas fa-user-injured fa-3x hvr-icon"></i>
+            </div>
+            <div style="display: inline-block;position:relative;background: transparent" class="ml-5">
+              <i style="color: rgb(246, 250, 247)" class="fas fa-id-card fa-3x hvr-icon"></i>
+            </div>
+            <div style="display: inline-block;position:relative;background: transparent" class="ml-5">
+              <i style="color: rgb(246, 250, 247)" class="fas fa-user-check fa-3x hvr-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

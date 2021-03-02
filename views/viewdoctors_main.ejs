@@ -1,0 +1,42 @@
+<%- include('./partials/header.ejs'); %> <%-
+include('./partials/sideMenu.ejs');%>
+
+<style>
+  .display {
+    border: 3px solid grey;
+    margin-top: 150px;
+    opacity: 100%;
+  }
+</style>
+<div class="row mt-5">
+  <div class="col-md-3 m-auto">
+    <div class="display card card-body">
+      <div class="list-group-item" style="background-color: white">
+        <a href="/patient/viewdoctors" class="btn btn-success btn-block"
+          >All Doctors</a
+        >
+      </div>
+      <div class="list-group-item" style="background-color: white">
+        <a href="/patient/availableDoctors" class="btn btn-success btn-block"
+          >Doctors Available Today</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div id="reports" class="card col-md-4 ml-5 margin-bottom">
+  <ul class="list-group list-group-flush">
+    <h5 class="sub_title" id="sub_title" style="color: aliceblue">Reports</h5>
+
+    <li class="list-group-item" style="background-color: white">
+      <a href="/patient/viewdoctors" class="btn btn-success btn-block"
+        >All Doctors</a
+      >
+    </li>
+    <li class="list-group-item" style="background-color: white">
+      <a href="/patient/availableDoctors" class="btn btn-success btn-block"
+        >Doctors Available Today</a
+      >
+    </li>
+  </ul>
+</div> -->
